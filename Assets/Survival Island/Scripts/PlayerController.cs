@@ -8,12 +8,13 @@ public class PlayerController : MonoBehaviour
 {
     private Vector3 movementDirection = Vector3.zero;
     private Vector3 airMovementDirection = Vector3.zero;
+    private Vector3 lookDirection = Vector3.zero;
     private bool isGrounded = true;
     private Rigidbody rbody;
     [SerializeField] protected float lookSpeed = 30.0f;
     [SerializeField] protected float movementSpeed = 10.0f;
     [SerializeField] protected float jumpForce = 250.0f;
-    [SerializeField] private Camera playerCamera;
+    [SerializeField] protected Camera cam;
 
     private void OnEnable()
     {
@@ -53,12 +54,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void Look(InputAction.CallbackContext ctx)
+    {
+        Look(ctx.ReadValue<Vector2>());
+    }
+
+    public void Look(Vector2 direction)
+    {
+        lookDirection = new Vector3(0.0f, direction.x, 0.0f);
+    }
+
     protected void Update()
     {
+        transform.Rotate(lookDirection * lookSpeed * Time.deltaTime);
         transform.Translate(movementDirection * Time.deltaTime);
     }
 
-    //TODO: FIx strange stutter issue on landing
+    //TODO: Fix strange stutter issue on landing
     private void OnCollisionEnter(Collision other)
     {
         // might need to check if this is a ground collision later 
