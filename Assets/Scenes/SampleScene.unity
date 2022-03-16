@@ -424,7 +424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4025441749128239570, guid: 4e8da2d8347897d4b86c19fd6a79027f, type: 3}
       propertyPath: m_Constraints
-      value: 122
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 4025441749128239570, guid: 4e8da2d8347897d4b86c19fd6a79027f, type: 3}
       propertyPath: m_Interpolate
@@ -444,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4601637462847796567, guid: 4e8da2d8347897d4b86c19fd6a79027f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.052
       objectReference: {fileID: 0}
     - target: {fileID: 4601637462847796567, guid: 4e8da2d8347897d4b86c19fd6a79027f, type: 3}
       propertyPath: m_LocalPosition.z
