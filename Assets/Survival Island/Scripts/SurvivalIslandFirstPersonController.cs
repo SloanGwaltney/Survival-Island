@@ -19,12 +19,12 @@ public class SurvivalIslandFirstPersonController : FirstPersonController
 
     protected override float GetHorizontalLook()
     {
-        return 0;
+        return inputActions.Player.Look.ReadValue<Vector2>().x;
     }
 
     protected override float GetVerticalLook()
     {
-        return 0;
+        return inputActions.Player.Look.ReadValue<Vector2>().y;
     }
 
     protected override bool IsCrouchKeyDown()
@@ -34,7 +34,7 @@ public class SurvivalIslandFirstPersonController : FirstPersonController
 
     protected override bool IsJumpKeyDown()
     {
-        return false;
+        return inputActions.Player.Jump.ReadValue<float>() == 1f;
     }
 
     protected override bool IsSprintKeyDown()

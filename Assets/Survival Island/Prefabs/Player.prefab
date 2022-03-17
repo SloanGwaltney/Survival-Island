@@ -210,7 +210,7 @@ MonoBehaviour:
   fov: 60
   invertCamera: 0
   cameraCanMove: 1
-  mouseSensitivity: 2
+  mouseSensitivity: 0.2
   maxLookAngle: 50
   lockCursor: 0
   crosshair: 0
@@ -238,9 +238,9 @@ MonoBehaviour:
   sprintBar: {fileID: 0}
   sprintBarWidthPercent: 0.3
   sprintBarHeightPercent: 0.015
-  enableJump: 0
+  enableJump: 1
   jumpKey: 32
-  jumpPower: 5
+  jumpPower: 0.1
   enableCrouch: 0
   holdToCrouch: 1
   crouchKey: 306
