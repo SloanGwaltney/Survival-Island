@@ -4,7 +4,7 @@ using UnityEngine;
 public class Gun : Weapon
 {
     [field: SerializeField] public GunActionType ActionType { get; protected set; }
-    [field: SerializeField] public float RoundsInClip { get; protected set; }
+    [field: SerializeField] public float RoundsPerClip { get; protected set; }
     [field: SerializeField] public float ReloadTime { get; protected set; }
     [field: SerializeField] public GunAmmo AmmoType { get; protected set; }
     [field: SerializeField] public float ProjectileFireForce { get; protected set; }
