@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class GunController : MonoBehaviour
 {
@@ -30,6 +31,14 @@ public class GunController : MonoBehaviour
         isActionCycling = false;
     }
 
+    public void PullTrigger(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            PullTrigger();
+        }
+    }
+
     public void PullTrigger()
     {
         if (roundsInClip > 0 && !isReloading && !isActionCycling)
@@ -39,11 +48,11 @@ public class GunController : MonoBehaviour
             if (gun.Action.CycleTime > 0f)
             {
                 StartActionCycle();
-                GameObject projectile = Instantiate<GameObject>(gun.ProjectilePrefab, transform.forward, transform.rotation);
-                Rigidbody rigidbody = projectile.GetComponent<Rigidbody>();
-                if (!rigidbody) Debug.Log("A gun fired a bullet without a rigidbody");
-                rigidbody?.AddForce(transform.forward * gun.ProjectileFireForce, ForceMode.Force);
             }
+            GameObject projectile = Instantiate<GameObject>(gun.ProjectilePrefab, transform.forward, transform.rotation);
+            Rigidbody rigidbody = projectile.GetComponent<Rigidbody>();
+            if (!rigidbody) Debug.Log("A gun fired a bullet without a rigidbody");
+            rigidbody?.AddForce(transform.forward * gun.ProjectileFireForce, ForceMode.Force);
         }
     }
 
