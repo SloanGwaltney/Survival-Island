@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Pistol Ammo
   <Description>k__BackingField: Ammo for a pistol
-  <Prefab>k__BackingField: {fileID: 0}
+  <Prefab>k__BackingField: {fileID: 8797904734674774688, guid: 6397217db22ce7c4d9d8e4a661007354, type: 3}

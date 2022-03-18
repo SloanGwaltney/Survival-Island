@@ -20,4 +20,4 @@ MonoBehaviour:
   <ReloadTime>k__BackingField: 2.56
   <AmmoType>k__BackingField: {fileID: 0}
   <ProjectileFireForce>k__BackingField: 3000
-  <ProjectilePrefab>k__BackingField: {fileID: 0}
+  <ProjectilePrefab>k__BackingField: {fileID: 8797904734674774688, guid: 6397217db22ce7c4d9d8e4a661007354, type: 3}
