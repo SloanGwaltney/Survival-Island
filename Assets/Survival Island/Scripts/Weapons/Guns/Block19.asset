@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab1eadc59096fa44ba186505d0845c64, type: 3}
+  m_Name: Block19
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 0}
+  <Name>k__BackingField: Block 19
+  <Description>k__BackingField: Starter Gun
+  <Action>k__BackingField: {fileID: 11400000, guid: fec1662e6e1e41fd7b0b334600c4d072, type: 2}
+  <RoundsPerClip>k__BackingField: 12
+  <ReloadTime>k__BackingField: 2.56
+  <AmmoType>k__BackingField: {fileID: 0}
+  <ProjectileFireForce>k__BackingField: 3000
+  <ProjectilePrefab>k__BackingField: {fileID: 8797904734674774688, guid: 6397217db22ce7c4d9d8e4a661007354, type: 3}
