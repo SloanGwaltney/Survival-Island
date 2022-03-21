@@ -65,6 +65,7 @@ public class GunController : MonoBehaviour
     {
         isReloading = false;
         reloadTimeElapsed = 0f;
+        roundsInClip = gun.RoundsPerClip;
         GunReloadFinished.Invoke(gun);
     }
 
