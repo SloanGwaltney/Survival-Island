@@ -49,10 +49,6 @@ public class GunController : MonoBehaviour
             {
                 StartActionCycle();
             }
-            GameObject projectile = Instantiate<GameObject>(gun.ProjectilePrefab, transform.forward, transform.rotation);
-            Rigidbody rigidbody = projectile.GetComponent<Rigidbody>();
-            if (!rigidbody) Debug.Log("A gun fired a bullet without a rigidbody");
-            rigidbody?.AddForce(transform.forward * gun.ProjectileFireForce, ForceMode.Force);
         }
     }
 

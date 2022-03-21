@@ -160,6 +160,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 66be526d-69b5-47ab-890e-44deea93a2ac
     m_ActionName: Player/Look[/Mouse/delta]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 050797a6-8695-4ba5-a2aa-5594e3be5123
+    m_ActionName: Player/Move Vertical[/Keyboard/s,/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ab1af18d-c938-4cda-8351-6c04f34de729
+    m_ActionName: Player/Shoot[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -336,6 +344,7 @@ GameObject:
   - component: {fileID: 3271981540308602135}
   - component: {fileID: 3893124940225037681}
   - component: {fileID: 1006452782516521699}
+  - component: {fileID: 7326997818217039193}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -372,7 +381,19 @@ MonoBehaviour:
   gun: {fileID: 11400000, guid: 6d95096656ba8c5f6acd02d0885b69c2, type: 2}
   GunFire:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7326997818217039193}
+        m_TargetAssemblyTypeName: ProjectileController, Assembly-CSharp
+        m_MethodName: FireProjectile
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   GunReloading:
     m_PersistentCalls:
       m_Calls: []
@@ -444,3 +465,15 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7326997818217039193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7388193250043397743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39fa14be472a8545b8435aad8a8f2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
