@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4025441749128239570}
   - component: {fileID: 8939401324378136959}
   - component: {fileID: -4752972809822592062}
+  - component: {fileID: 1676881727111991958}
+  - component: {fileID: 3956512017599554376}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -168,6 +170,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: ab1af18d-c938-4cda-8351-6c04f34de729
     m_ActionName: Player/Shoot[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e7712b06-e17e-4f12-844d-79bc026c9ec9
+    m_ActionName: Player/Reload[/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -259,6 +265,49 @@ MonoBehaviour:
   joint: {fileID: 0}
   bobSpeed: 10
   bobAmount: {x: 0.15, y: 0.05, z: 0}
+--- !u!114 &1676881727111991958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335724354797845803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7922a4a73611f76458b27006d8d57b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <startingHealth>k__BackingField:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 91e16c6a3cfa3c94b9d8a467c013fb49, type: 2}
+--- !u!114 &3956512017599554376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335724354797845803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900bbc45bb0b7457eaf90cf2d9b2c31b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageTaken:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1676881727111991958}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: LoseHealth
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6479042366363900327
 GameObject:
   m_ObjectHideFlags: 0
