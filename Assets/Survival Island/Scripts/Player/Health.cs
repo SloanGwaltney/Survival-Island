@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [field: SerializeField] public FloatReference startingHealth { get; set; }
+    [field: SerializeField] public FloatReference StartingHealth { get; set; }
     private float health;
 
     private void OnEnable()
     {
-        health = startingHealth.Value;
+        health = StartingHealth.Value;
     }
 
     public void LoseHealth(float damageToHealth)

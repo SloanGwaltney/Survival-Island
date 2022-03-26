@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d43019d6881514a886711ca302800d, type: 3}
-  m_Name: Pistol Ammo
+  m_Script: {fileID: 11500000, guid: 1349bb56d11be87429e34d2149bfb06f, type: 3}
+  m_Name: Block19 Description
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Pistol Ammo
-  <Description>k__BackingField: Ammo for a pistol
-  <Prefab>k__BackingField: {fileID: 8797904734674774688, guid: 6397217db22ce7c4d9d8e4a661007354, type: 3}
+  <Value>k__BackingField: Starter Weapon
