@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7922a4a73611f76458b27006d8d57b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <startingHealth>k__BackingField:
+  <StartingHealth>k__BackingField:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 91e16c6a3cfa3c94b9d8a467c013fb49, type: 2}
@@ -427,7 +427,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b1672d8893e99478dc7fd39c736c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gun: {fileID: 11400000, guid: 6d95096656ba8c5f6acd02d0885b69c2, type: 2}
+  roundsPerClip:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: f7164162c2f0023428cb29170ebbcea2, type: 2}
+  reloadTime:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 7d1d5ce0943303a4e8f660baafa7b3eb, type: 2}
+  actionCycleTime:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: d54371168b10ba94bb0bb715b5bb2556, type: 2}
   GunFire:
     m_PersistentCalls:
       m_Calls:
@@ -542,3 +553,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fa14be472a8545b8435aad8a8f2f2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileToSpawn:
+    UseConstant: 0
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 11400000, guid: 841393780e689034bbb51a6dad03e140, type: 2}
+  projectileFireForce:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 8c7e74e951ee19b4c9aa823055faa62c, type: 2}
