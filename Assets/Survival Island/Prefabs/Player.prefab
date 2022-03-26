@@ -561,3 +561,4 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8c7e74e951ee19b4c9aa823055faa62c, type: 2}
+  cam: {fileID: 5215789215025711406}
