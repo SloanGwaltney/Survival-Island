@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1349bb56d11be87429e34d2149bfb06f, type: 3}
   m_Name: Semi Automatic Description
   m_EditorClassIdentifier: 
-  <Value>k__BackingField: 
+  <Value>k__BackingField: A action that fires one round at a time but automatically
+    cycles

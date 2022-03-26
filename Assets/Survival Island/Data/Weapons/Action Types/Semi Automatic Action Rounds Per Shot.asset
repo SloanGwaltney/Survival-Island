@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b19657a70efa5844fbf1214fca8eff23, type: 3}
   m_Name: Semi Automatic Action Rounds Per Shot
   m_EditorClassIdentifier: 
-  <Value>k__BackingField: 0
+  <Value>k__BackingField: 1
