@@ -11,7 +11,6 @@ public class DamageOnOverlap : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject == gameObject) return;
-        Debug.Log(other.gameObject.name);
         DamageReceiver receiver = other.gameObject.GetComponent<DamageReceiver>();
         if (!receiver) return;
         DamageOverlapEntered.Invoke(damageToDeal.Value, receiver);
