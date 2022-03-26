@@ -4,19 +4,21 @@ using UnityEngine.InputSystem;
 
 public class GunController : MonoBehaviour
 {
-    [SerializeField] private Gun gun;
+    [SerializeField] private FloatReference roundsPerClip;
+    [SerializeField] private FloatReference reloadTime;
+    [SerializeField] private FloatReference actionCycleTime;
     private float roundsInClip;
     private bool isReloading;
     private bool isActionCycling;
     private float reloadTimeElapsed;
     private float actionCyclingTimeElapsed;
-    public UnityEvent<Gun> GunFire;
-    public UnityEvent<Gun> GunReloading;
-    public UnityEvent<Gun> GunReloadFinished;
-    public UnityEvent<Gun> ActionCyclingStarted;
+    public UnityEvent GunFire;
+    public UnityEvent GunReloading;
+    public UnityEvent GunReloadFinished;
+    public UnityEvent ActionCyclingStarted;
     private void Awake()
     {
-        roundsInClip = gun.RoundsPerClip;
+        roundsInClip = roundsPerClip.Value;
     }
 
     private void OnEnable()
@@ -44,8 +46,8 @@ public class GunController : MonoBehaviour
         if (roundsInClip > 0 && !isReloading && !isActionCycling)
         {
             roundsInClip--;
-            GunFire.Invoke(gun);
-            if (gun.Action.CycleTime > 0f)
+            GunFire.Invoke();
+            if (actionCycleTime.Value > 0f)
             {
                 StartActionCycle();
             }
@@ -57,7 +59,7 @@ public class GunController : MonoBehaviour
         if (!isReloading && !isActionCycling)
         {
             isReloading = true;
-            GunReloading.Invoke(gun);
+            GunReloading.Invoke();
         }
     }
 
@@ -65,13 +67,13 @@ public class GunController : MonoBehaviour
     {
         isReloading = false;
         reloadTimeElapsed = 0f;
-        roundsInClip = gun.RoundsPerClip;
-        GunReloadFinished.Invoke(gun);
+        roundsInClip = roundsPerClip.Value;
+        GunReloadFinished.Invoke();
     }
 
     protected void StartActionCycle()
     {
-        ActionCyclingStarted.Invoke(gun);
+        ActionCyclingStarted.Invoke();
         isActionCycling = true;
     }
 
@@ -85,7 +87,7 @@ public class GunController : MonoBehaviour
         if (isReloading)
         {
             reloadTimeElapsed += Time.deltaTime;
-            if (reloadTimeElapsed >= gun.ReloadTime)
+            if (reloadTimeElapsed >= reloadTime.Value)
             {
                 FinishReload();
             }
@@ -93,7 +95,7 @@ public class GunController : MonoBehaviour
         if (isActionCycling)
         {
             actionCyclingTimeElapsed += Time.deltaTime;
-            if (actionCyclingTimeElapsed >= gun.Action.CycleTime)
+            if (actionCyclingTimeElapsed >= actionCycleTime.Value)
             {
                 FinishActionCycle();
             }
