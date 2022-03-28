@@ -454,6 +454,9 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: d54371168b10ba94bb0bb715b5bb2556, type: 2}
+  roundsPerShot: {fileID: 11400000, guid: 083d8bc6812027b488ce932f94a4854d, type: 2}
+  PlayerGunFired: {fileID: 11400000, guid: 10f2c74797d29194cb29d579cbdd4ca8, type: 2}
+  PlayerReloaded: {fileID: 11400000, guid: d0abbcc136867864e9622389eea1a13a, type: 2}
   GunFire:
     m_PersistentCalls:
       m_Calls:
