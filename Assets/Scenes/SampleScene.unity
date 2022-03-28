@@ -408,6 +408,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4503031270392984428, guid: f1d1a0345dc365146bec2c95ce75d590, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503031270392984428, guid: f1d1a0345dc365146bec2c95ce75d590, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4503031270392984428, guid: f1d1a0345dc365146bec2c95ce75d590, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503031270392984428, guid: f1d1a0345dc365146bec2c95ce75d590, type: 3}
+      propertyPath: m_FillMethod
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503031270392984428, guid: f1d1a0345dc365146bec2c95ce75d590, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5546762382878524713, guid: f1d1a0345dc365146bec2c95ce75d590, type: 3}
       propertyPath: m_RootOrder
       value: 3
