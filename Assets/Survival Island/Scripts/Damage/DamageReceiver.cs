@@ -8,7 +8,6 @@ public class DamageReceiver : MonoBehaviour
     public void TakeDamage(float damageToTake)
     {
         // not much here but if we ever wanted to de-buff damage with armor or something else that logic could go here
-        Debug.Log("I make it to takedamage");
         DamageTaken.Invoke(damageToTake);
     }
 }

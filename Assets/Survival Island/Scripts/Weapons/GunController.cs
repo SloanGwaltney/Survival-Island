@@ -7,6 +7,9 @@ public class GunController : MonoBehaviour
     [SerializeField] private FloatReference roundsPerClip;
     [SerializeField] private FloatReference reloadTime;
     [SerializeField] private FloatReference actionCycleTime;
+    [SerializeField] private FloatVariable roundsPerShot;
+    [SerializeField] private FloatGameEvent PlayerGunFired;
+    [SerializeField] private FloatGameEvent PlayerReloaded;
     private float roundsInClip;
     private bool isReloading;
     private bool isActionCycling;
@@ -47,6 +50,7 @@ public class GunController : MonoBehaviour
         {
             roundsInClip--;
             GunFire.Invoke();
+            PlayerGunFired.Raise(roundsPerShot.Value);
             if (actionCycleTime.Value > 0f)
             {
                 StartActionCycle();
@@ -69,6 +73,7 @@ public class GunController : MonoBehaviour
         reloadTimeElapsed = 0f;
         roundsInClip = roundsPerClip.Value;
         GunReloadFinished.Invoke();
+        PlayerReloaded.Raise(roundsPerClip.Value);
     }
 
     protected void StartActionCycle()

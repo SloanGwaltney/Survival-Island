@@ -281,6 +281,21 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 91e16c6a3cfa3c94b9d8a467c013fb49, type: 2}
+  HeathLostEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5ab7f557af2d72640a98d6cce7ab23f9, type: 2}
+        m_TargetAssemblyTypeName: FloatGameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3956512017599554376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,6 +454,9 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: d54371168b10ba94bb0bb715b5bb2556, type: 2}
+  roundsPerShot: {fileID: 11400000, guid: 083d8bc6812027b488ce932f94a4854d, type: 2}
+  PlayerGunFired: {fileID: 11400000, guid: 10f2c74797d29194cb29d579cbdd4ca8, type: 2}
+  PlayerReloaded: {fileID: 11400000, guid: d0abbcc136867864e9622389eea1a13a, type: 2}
   GunFire:
     m_PersistentCalls:
       m_Calls:
