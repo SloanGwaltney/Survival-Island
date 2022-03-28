@@ -12,12 +12,23 @@ public class AmmoDisplayController : MonoBehaviour
     void Start()
     {
         roundsInClip = roundsPerClip.Value;
-        ammoText.text = $"{roundsInClip}/{roundsPerClip.Value}";
+        UpdateText();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AmmoConsumed(float amountConsumed)
     {
+        roundsInClip -= amountConsumed;
+        UpdateText();
+    }
 
+    public void Reload(float amountReloaded)
+    {
+        roundsInClip = amountReloaded;
+        UpdateText();
+    }
+
+    private void UpdateText()
+    {
+        ammoText.text = $"{roundsInClip}/{roundsPerClip.Value}";
     }
 }
