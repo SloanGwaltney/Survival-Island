@@ -139,4 +139,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff46645b0600dc846b9609d038fde248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lootDrops: []
+  lootDrops:
+  - UseConstant: 0
+    ConstantValue: {fileID: 0}
+    Variable: {fileID: 11400000, guid: 841393780e689034bbb51a6dad03e140, type: 2}
+  timesGatherable:
+    UseConstant: 1
+    ConstantValue: 2
+    Variable: {fileID: 0}
+  lootGathered: {fileID: 11400000, guid: 9c485d7c7d3ae5144890458f4f63e937, type: 2}
