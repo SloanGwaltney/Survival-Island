@@ -21,7 +21,7 @@ public class Gatherer : MonoBehaviour
         {
             GameObject hitObject = hit.collider.gameObject;
             Gatherable gatherableComp = hitObject.GetComponent<Gatherable>();
-            if (gatherableComp)
+            if (gatherableComp != null)
             {
                 gatherableComp.Gather();
             }
