@@ -1,9 +1,19 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Gatherer : MonoBehaviour
 {
     [SerializeField] private Camera cam;
     [SerializeField] private FloatReference gatherDistance;
+
+    public void Gather(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            Gather();
+        }
+    }
+
     public void Gather()
     {
         RaycastHit hit;
