@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -4752972809822592062}
   - component: {fileID: 1676881727111991958}
   - component: {fileID: 3956512017599554376}
+  - component: {fileID: 7579938172369727587}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -174,6 +175,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: e7712b06-e17e-4f12-844d-79bc026c9ec9
     m_ActionName: Player/Reload[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7579938172369727587}
+        m_TargetAssemblyTypeName: Gatherer, Assembly-CSharp
+        m_MethodName: Gather
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: be922a30-147a-4b6b-8c33-21482d828fb1
+    m_ActionName: Player/Action[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -323,6 +340,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7579938172369727587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335724354797845803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e040d3e6c8928458b794b5e8811431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 5215789215025711406}
+  gatherDistance:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: cbef8677730aed66084ce9376bca5e2f, type: 2}
 --- !u!1 &6479042366363900327
 GameObject:
   m_ObjectHideFlags: 0
