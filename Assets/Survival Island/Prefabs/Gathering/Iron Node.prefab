@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 1513828112623068333}
   - component: {fileID: 5841417319334102148}
   - component: {fileID: 2845214213520653362}
+  - component: {fileID: 445529016168272893}
   m_Layer: 0
   m_Name: Node
   m_TagString: Untagged
@@ -142,9 +143,29 @@ MonoBehaviour:
   lootDrops:
   - UseConstant: 0
     ConstantValue: {fileID: 0}
-    Variable: {fileID: 11400000, guid: 841393780e689034bbb51a6dad03e140, type: 2}
+    Variable: {fileID: 11400000, guid: 7db1695f1aacb804ebce7be10cd1ac2b, type: 2}
   timesGatherable:
     UseConstant: 1
     ConstantValue: 2
     Variable: {fileID: 0}
   lootGathered: {fileID: 11400000, guid: 9c485d7c7d3ae5144890458f4f63e937, type: 2}
+--- !u!114 &445529016168272893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7724821023816758735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e7093a9f660ca4d94a89b505904bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: f995f10a3f1d2544d84b0b56de84dd29, type: 2}
+  <Description>k__BackingField:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: cc869b91dfca0c34f8b0b21041fa5d1a, type: 2}
