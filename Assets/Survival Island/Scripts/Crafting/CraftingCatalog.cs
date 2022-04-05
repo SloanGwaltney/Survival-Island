@@ -14,6 +14,7 @@ public class CraftingCatalog : ScriptableObject
         LoadResources();
     }
 
+    // Might need to manage how this is loaded if prefab folder gets thick
     protected void LoadResources()
     {
         GameObject[] objects = Resources.LoadAll<GameObject>("/Prefabs");
